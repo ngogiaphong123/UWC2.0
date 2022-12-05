@@ -1,9 +1,11 @@
 import style from './styles/ListEmployee.css'
+import { FaFilter, FaSortAmountUp } from "react-icons/fa";
+import { RiMore2Fill } from "react-icons/ri"
 //1 props gồm Url, Name, State, Dateonline, Timeonline, Group, Type
 function EmployeeInfor(props) {
-    let TypeClass='employeeinfor-jobtype'
-    if (props.Type==='COLLECTOR') TypeClass='employeeinfor-jobtype-1'
-    else if (props.Type==='JANITOR') TypeClass='employeeinfor-jobtype-2'
+    let TypeClass = 'employeeinfor-jobtype'
+    if (props.Type === 'COLLECTOR') TypeClass = 'employeeinfor-jobtype-1'
+    else if (props.Type === 'JANITOR') TypeClass = 'employeeinfor-jobtype-2'
     return (
         <div className='employeeinfor-wrap'>
             <div className='employeeinfor-col1'>
@@ -37,7 +39,7 @@ function EmployeeInfor(props) {
                 </div>
             </div>
             <div className='employeeinfor-col6'>
-
+                <RiMore2Fill className='employeeicon-3dot' size={30}/>
             </div>
         </div >
     )
@@ -54,10 +56,12 @@ function ListEmployee() {
                     </div>
                     <div className='listemployee-header-2'>
                         <div className='listemployee-header-sort'>
-                            Sort
+                            <div className='listemployee-sort'>Sort</div>
+                            <FaSortAmountUp />
                         </div>
                         <div className='listemployee-header-filter'>
-                            Filter
+                            <div className='listemployee-filter'>Filer</div>
+                            <FaFilter />
                         </div>
                     </div>
                 </div>

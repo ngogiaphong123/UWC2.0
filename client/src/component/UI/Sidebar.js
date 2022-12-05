@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-
+import ListEmployee from '../modules/ListEmployee';
 
 
 export default function Sidebar() {
@@ -14,7 +14,7 @@ export default function Sidebar() {
                 <Col sm={2 }>
                     <Nav variant="pills" className="flex-column">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                            <Nav.Link eventKey="first">Danh sách nhân viên</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="second">Tab 2</Nav.Link>
@@ -24,7 +24,7 @@ export default function Sidebar() {
                 <Col sm={9}>
                     <Tab.Content>
                         <Tab.Pane eventKey="first">
-                            tab 1
+                            <ListEmployee/>
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                             tab 2

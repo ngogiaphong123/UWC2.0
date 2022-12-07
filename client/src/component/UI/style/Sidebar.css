@@ -1,0 +1,34 @@
+.sidebar__{
+    height: 100%;
+    background-color: #fff;
+    width: 250px;
+    position: fixed;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.sidebar_ctn{
+    overflow: auto;
+    height: 80vh;
+    width: 100%;
+}
+.sidebar__item{
+    /* #0d6efd */
+    text-align: center;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 80%;
+    height: 40px;
+    border-radius: 1rem;
+}
+.item_name{
+    text-decoration: none;
+    color: black;
+}
+.color__blue{
+    background-color: #0d6efd;
+    color: #fff !important;
+}

@@ -1,4 +1,10 @@
+
+.Dashboard{
+    display: flex;
+}
+.element{
+    width: 100%;
+}
 .sidebar{
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 250px;
 }

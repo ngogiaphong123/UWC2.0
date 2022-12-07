@@ -1,37 +1,28 @@
 import React from 'react';
-
-import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Row from 'react-bootstrap/Row';
-import Tab from 'react-bootstrap/Tab';
-import ListEmployee from '../modules/ListEmployee';
+import { Link } from 'react-router-dom';
+import './style/Sidebar.css';
 
 
-export default function Sidebar() {
+export default function Sidebar({ path }) {
+    console.log(path);
+
+    const onSelectColor = (item) => {
+        let p = `/Dashboard/${item}`;
+        if (path === '/Dashboard' || path !== p) {
+            return 'sidebar__item';
+        }
+        return 'sidebar__item color__blue'
+    }
+
     return (
-        <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-            <Row>
-                <Col sm={2 }>
-                    <Nav variant="pills" className="flex-column">
-                        <Nav.Item>
-                            <Nav.Link eventKey="first">Danh sách nhân viên</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                </Col>
-                <Col sm={9}>
-                    <Tab.Content>
-                        <Tab.Pane eventKey="first">
-                            <ListEmployee/>
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="second">
-                            tab 2
-                        </Tab.Pane>
-                    </Tab.Content>
-                </Col>
-            </Row>
-        </Tab.Container>
+        <div className='sidebar__'>
+            <div className='sidebar_ctn'>
+                <div className='sidebar__item'>Danh sách nhân viên</div>
+                <Link to='DSNV' className='item_name'><div className={onSelectColor('DSNV')}>DSNV</div></Link>
+                <div className='sidebar__item'>Item1</div>
+                <div className='sidebar__item'>Item1</div>
+                <div className='sidebar__item'>Item1</div>
+            </div>
+        </div>
     );
 }

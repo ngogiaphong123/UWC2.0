@@ -10,7 +10,7 @@ export default function NavbarComponent() {
         <Navbar collapseOnSelect expand="xl" bg="light" variant="light" sticky='top' key='sm'>
             <Container className='nv-container'>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Brand href="#home">LOGO</Navbar.Brand>
+                <Navbar.Brand href="/">LOGO</Navbar.Brand>
                 <Navbar.Offcanvas
                     id={`offcanvasNavbar-expand-xl`}
                     aria-labelledby={`offcanvasNavbarLabel-expand-xl`}

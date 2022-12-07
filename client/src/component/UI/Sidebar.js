@@ -17,11 +17,11 @@ export default function Sidebar({ path }) {
     return (
         <div className='sidebar__'>
             <div className='sidebar_ctn'>
-                <div className='sidebar__item'>Danh sách nhân viên</div>
+                <Link to='Home' className='item_name'><div className={onSelectColor('Home')}>Trang chủ</div></Link>
                 <Link to='DSNV' className='item_name'><div className={onSelectColor('DSNV')}>DSNV</div></Link>
-                <div className='sidebar__item'>Item1</div>
-                <div className='sidebar__item'>Item1</div>
-                <div className='sidebar__item'>Item1</div>
+                <Link to='TB' className='item_name'><div className={onSelectColor('TB')}>Thông báo</div></Link>
+                <Link to='Chat' className='item_name'><div className={onSelectColor('Chat')}>Trò chuyện</div></Link>
+                <Link to='NV' className='item_name'><div className={onSelectColor('NV')}>Nhiệm vụ</div></Link>
             </div>
         </div>
     );

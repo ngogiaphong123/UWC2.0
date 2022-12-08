@@ -25,7 +25,7 @@ function Login() {
                                         <input className="form-check-input" type="checkbox" value="" id="form1Example3" />
                                         <label className="form-check-label" for="form1Example3"> Remember password </label>
                                     </div>
-                                    <a href="#">Register!</a>
+                                    <a href="/Register">Register!</a>
                                 </div>
 
                                 <button className="btn btn-primary btn-lg btn-block" type="submit">Login</button>   

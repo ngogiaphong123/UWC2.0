@@ -5,6 +5,7 @@ import NavbarComponent from './component/UI/Navbar';
 import Home from './component/modules/Home';
 import Dashboard from './component/modules/Dashboard';
 import Login from './component/modules/Login';
+import Register from './component/modules/Register';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/Dashboard/*' element={<Dashboard />}/>
           <Route path = '/Login' element={<Login />}/>
+          <Route path = '/Register' element={<Register />}/>
         </Routes>
       </Router>
     </>

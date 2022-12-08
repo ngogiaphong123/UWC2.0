@@ -55,7 +55,7 @@ export default function NavbarComponent() {
                 </Navbar.Offcanvas>
                 <div className='btn-gr'>
                     <Button variant="light" href="/chat" className="chat__btn"><FiSend/></Button>
-                    <Button className="login__btn">Đăng nhập</Button>
+                    <Button className="login__btn" href="/Login">Đăng nhập</Button>
                 </div>
             </Container>
         </Navbar>

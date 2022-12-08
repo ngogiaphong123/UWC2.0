@@ -26,7 +26,7 @@ function Register() {
                                 </div>
 
                                 <div className="form-check d-flex justify-content-end mb-4">    
-                                    <a href="#">Login!</a>
+                                    <a href="/Login">Login!</a>
                                 </div>
 
                                 <button className="btn btn-primary btn-lg btn-block" type="submit">Register</button>   

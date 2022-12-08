@@ -1,4 +1,4 @@
-import style from './styles/Notification.css'
+import './styles/Notification.css'
 function Framechat(props){
     return(
         <div className="ochat">

@@ -4,9 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './component/UI/Navbar';
 import Home from './component/modules/Home';
 import Dashboard from './component/modules/Dashboard';
-import ListEmployee from './component/modules/ListEmployee';
-import Notification from './component/modules/Notification';
-import Inforpage from './component/modules/InforPage';
+import Login from './component/modules/Login';
 
 function App() {
   return (
@@ -16,6 +14,7 @@ function App() {
         <NavbarComponent />
         <Routes>
           <Route path='/Dashboard/*' element={<Dashboard />}/>
+          <Route path = '/Login' element={<Login />}/>
         </Routes>
       </Router>
     </>

@@ -14,6 +14,7 @@ export default function Dashboard(){
             </div>
             <div className="element">
                 <Routes>
+                    <Route path='' element={<ListEmployee />} />
                     <Route path = 'DSNV' element = {<ListEmployee/>}/>
                     <Route path = 'TB' element = {<Notification/>}/>
                     {/* <Route path = 'NV' element = /> */}

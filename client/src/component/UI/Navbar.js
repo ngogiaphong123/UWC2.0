@@ -5,12 +5,24 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faTruckFast,
+} from '@fortawesome/free-solid-svg-icons';
+import './style/Navbar.css';
+import { FiSend } from "react-icons/fi";
+
 export default function NavbarComponent() {
     return (
         <Navbar collapseOnSelect expand="xl" bg="light" variant="light" sticky='top' key='sm'>
             <Container className='nv-container'>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Brand href="/">LOGO</Navbar.Brand>
+                <Navbar.Brand href="/">
+                    <div className='logo'>
+                        <FontAwesomeIcon icon={faTruckFast} className='logo-icon'></FontAwesomeIcon>
+                        URBAN WASTE <br /> COLLECTION <br /> AID - UWC 2.0
+                    </div>
+                </Navbar.Brand>
                 <Navbar.Offcanvas
                     id={`offcanvasNavbar-expand-xl`}
                     aria-labelledby={`offcanvasNavbarLabel-expand-xl`}
@@ -39,7 +51,8 @@ export default function NavbarComponent() {
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
                 <div className='btn-gr'>
-                    <Button>Đăng nhập</Button>
+                    <Button variant="light" href="/chat" className="chat__btn"><FiSend/></Button>
+                    <Button className="login__btn">Đăng nhập</Button>
                 </div>
             </Container>
         </Navbar>

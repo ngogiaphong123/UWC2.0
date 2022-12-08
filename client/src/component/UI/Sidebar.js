@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style/Sidebar.css';
+import { MdKeyboardBackspace } from "react-icons/md";
 
 
 export default function Sidebar({ path }) {
@@ -17,11 +18,14 @@ export default function Sidebar({ path }) {
     return (
         <div className='sidebar__'>
             <div className='sidebar_ctn'>
-                <Link to='Home' className='item_name'><div className={onSelectColor('Home')}>Trang chủ</div></Link>
+                {/* <Link to='Home' className='item_name'><div className={onSelectColor('Home')}>Trang chủ</div></Link> */}
                 <Link to='DSNV' className='item_name'><div className={onSelectColor('DSNV')}>DSNV</div></Link>
                 <Link to='TB' className='item_name'><div className={onSelectColor('TB')}>Thông báo</div></Link>
                 <Link to='Chat' className='item_name'><div className={onSelectColor('Chat')}>Trò chuyện</div></Link>
                 <Link to='NV' className='item_name'><div className={onSelectColor('NV')}>Nhiệm vụ</div></Link>
+            </div>
+            <div className='sidebar__footer'>
+                <button className='back__btn sidebar__item color__blue'><MdKeyboardBackspace/> Trở về</button>
             </div>
         </div>
     );

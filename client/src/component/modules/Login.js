@@ -1,4 +1,4 @@
-import style from "./styles/Login.css"
+import "./styles/Login.css"
 function Login() {
     return(
         <section className="vh-100 sectionlogin">

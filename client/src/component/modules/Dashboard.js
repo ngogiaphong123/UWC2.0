@@ -3,6 +3,7 @@ import {  Routes, Route, useLocation } from 'react-router-dom'
 import Sidebar from "../UI/Sidebar";
 import './styles/Dashboard.css';
 import ListEmployee from "./ListEmployee";
+import Notification from "./Notification";
 export default function Dashboard(){
     let location = useLocation();
     console.log(location);
@@ -14,6 +15,8 @@ export default function Dashboard(){
             <div className="element">
                 <Routes>
                     <Route path = 'DSNV' element = {<ListEmployee/>}/>
+                    <Route path = 'TB' element = {<Notification/>}/>
+                    {/* <Route path = 'NV' element = /> */}
                 </Routes>
             </div>
         </div>

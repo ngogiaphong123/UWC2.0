@@ -1,4 +1,4 @@
-import style from './styles/ListEmployee.css'
+import './styles/ListEmployee.css'
 import { FaFilter, FaSortAmountUp } from "react-icons/fa";
 import { RiMore2Fill } from "react-icons/ri"
 //1 props gồm Url, Name, State, Dateonline, Timeonline, Group, Type

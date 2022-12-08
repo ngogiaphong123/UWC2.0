@@ -12,8 +12,8 @@ function Notification(){
         <div className="container container_noti">
             <div className="row row_noti">
                 <div className="col-3 divbutton">
-                    <button type="button" class="btn btn-primary">Tin nhắn</button><br></br>
-                    <button type="button" class="btn btn-info">Thông báo chung</button>
+                    <button type="button" className="btn btn-primary">Tin nhắn</button><br></br>
+                    <button type="button" className="btn btn-info">Thông báo chung</button>
                     
                 </div>
                 <div className="col-9 framechat">
@@ -23,7 +23,7 @@ function Notification(){
                     <Framechat nameEmployee="Nguyen Minh My"></Framechat>
                 </div>
                 <div className="col-12 divback">
-                    <button type="button" class="btn btn-danger backbutton">Trở về</button>
+                    <button type="button" className="btn btn-danger backbutton">Trở về</button>
                 </div>
             </div>
             

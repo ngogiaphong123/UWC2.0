@@ -30,7 +30,10 @@ export default function NavbarComponent() {
                 >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`}>
-                            LOGO
+                            <div className='logo'>
+                                <FontAwesomeIcon icon={faTruckFast} className='logo-icon'></FontAwesomeIcon>
+                                URBAN WASTE <br /> COLLECTION <br /> AID - UWC 2.0
+                            </div>
                         </Offcanvas.Title>
                     </Offcanvas.Header>
                     <Offcanvas.Body>

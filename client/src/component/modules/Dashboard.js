@@ -6,7 +6,7 @@ import ListEmployee from "./ListEmployee";
 import Notification from "./Notification";
 export default function Dashboard(){
     let location = useLocation();
-    console.log(location);
+    // console.log(location);
     return (
         <div className="Dashboard">
             <div className="sidebar">

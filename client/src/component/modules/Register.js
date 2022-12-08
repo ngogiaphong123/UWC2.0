@@ -1,5 +1,5 @@
 import style from "./styles/Login.css"
-function Login() {
+function Register() {
     return(
         <section className="vh-100 sectionlogin">
             <div className="container py-5 h-100">
@@ -8,7 +8,7 @@ function Login() {
                         <div className="card cardlogin">
                             <div className="card-body p-5 text-center">
 
-                            <h3 className="mb-5">Login</h3>
+                            <h3 className="mb-5">Register</h3>
 
                                 <div class="form-floating mb-4">
                                 <input class="form-control" id="typeUserX-2" type="input" placeholder="Tên đăng nhập"/>
@@ -20,15 +20,16 @@ function Login() {
                                 <label for="typePasswordX-2">Mật khẩu</label>
                                 </div>
 
-                                <div className="form-check d-flex justify-content-between mb-4">
-                                    <div>
-                                        <input className="form-check-input" type="checkbox" value="" id="form1Example3" />
-                                        <label className="form-check-label" for="form1Example3"> Remember password </label>
-                                    </div>
-                                    <a href="#">Register!</a>
+                                <div class="form-floating mb-4">
+                                <input class="form-control" id="typePasswordX-3" type="password" placeholder="Nhập lại mật khẩu"/>
+                                <label for="typePasswordX-3">Nhập lại mật khẩu</label>
                                 </div>
 
-                                <button className="btn btn-primary btn-lg btn-block" type="submit">Login</button>   
+                                <div className="form-check d-flex justify-content-end mb-4">    
+                                    <a href="#">Login!</a>
+                                </div>
+
+                                <button className="btn btn-primary btn-lg btn-block" type="submit">Register</button>   
                             </div>
                         </div>
                     </div>
@@ -37,4 +38,4 @@ function Login() {
         </section>
     )
 }
-export default Login;
+export default Register;

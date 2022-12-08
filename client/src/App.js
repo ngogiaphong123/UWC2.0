@@ -7,6 +7,8 @@ import Dashboard from './component/modules/Dashboard';
 import ListEmployee from './component/modules/ListEmployee';
 import Notification from './component/modules/Notification';
 import Inforpage from './component/modules/InforPage';
+import Login from './component/modules/Login';
+import Register from './component/modules/Register';
 
 function App() {
   return (

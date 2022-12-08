@@ -1,0 +1,35 @@
+.ochat{
+    width: 95%;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: rgb(225, 225, 225);
+    padding: 3px 20px;
+}
+button{
+    width: 95%;
+    margin: 10px auto;
+    height: 50px;
+}
+.divbutton{
+    background-color: aliceblue;
+    height: 100%;
+    margin: 10px 0;
+}
+.framechat{
+    background-color: rgb(245, 245, 245);
+    height: 100%;
+    margin: 10px 0;
+}
+.container_noti{
+    height: 600px;
+}
+.row_noti{
+    height: 100%;
+}
+.backbutton{
+    width: 20%;
+
+}
+.divback{
+    height: fit-content;
+}

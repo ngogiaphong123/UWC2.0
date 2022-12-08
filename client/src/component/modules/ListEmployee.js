@@ -1,13 +1,20 @@
 import './styles/ListEmployee.css'
 import { FaFilter, FaSortAmountUp } from "react-icons/fa";
 import { RiMore2Fill } from "react-icons/ri"
+import { useNavigate } from 'react-router-dom';
 //1 props gồm Url, Name, State, Dateonline, Timeonline, Group, Type
 function EmployeeInfor(props) {
+    const navigate = useNavigate();
     let TypeClass = 'employeeinfor-jobtype'
     let StateClass = 'employeeinfor-state-icon'
     if (props.State === 'Bận') StateClass = 'employeeinfor-state-icon-1'
     if (props.Type === 'COLLECTOR') TypeClass = 'employeeinfor-jobtype-1'
     else if (props.Type === 'JANITOR') TypeClass = 'employeeinfor-jobtype-2'
+    const handleClickName = () => {
+        console.log(props.Type);
+        if(props.Type === 'COLLECTOR') navigate('/Dashboard/DSNV/collectorCalendar')
+        else if(props.Type === 'JANITOR') navigate('/Dashboard/DSNV/JanitorCalendar')
+    }
     return (
         <div className='employeeinfor-wrap'>
             <div className='employeeinfor-col1'>
@@ -16,7 +23,7 @@ function EmployeeInfor(props) {
                 </div>
             </div>
             <div className='employeeinfor-col2'>
-                <div className='employeeinfor-name'>
+                <div className='employeeinfor-name' onClick={() =>handleClickName()}>
                     {props.Name}
                 </div>
                 <div className='employeeinfor-state'>

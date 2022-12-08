@@ -10,11 +10,11 @@ import Inforpage from './component/modules/InforPage';
 
 function App() {
   return (
+    
     <>
       <Router>
         <NavbarComponent />
         <Routes>
-          <Route path='/' element={<Home />} />
           <Route path='/Dashboard/*' element={<Dashboard />}/>
         </Routes>
       </Router>

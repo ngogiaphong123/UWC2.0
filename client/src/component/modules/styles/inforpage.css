@@ -11,9 +11,11 @@
     text-align: center;
     border-radius: 10px;
     background-color: rgb(234, 234, 234);
+    padding: 20px 0;
 }
 .frameinfor>button{
     width: 80%;
+    margin: 5px 0;
 }
 .detail_email{
     padding: 30px;

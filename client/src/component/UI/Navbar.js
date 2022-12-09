@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from 'react-bootstrap/Button'
 import Offcanvas from 'react-bootstrap/Offcanvas'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import Dropdown from 'react-bootstrap/Dropdown';
 
 import {User} from '../modules/utils/user';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -16,19 +17,27 @@ import './style/Navbar.css';
 import { FiSend } from "react-icons/fi";
 
 export default function NavbarComponent() {
-
+    const [show, setShow] = useState(false);
     const Login = () => {
-        // let token = localStorage.getItem('USER_LOGIN');
-        // if(!token)
-        //     return (<Button className="login__btn" href="/Login">Đăng nhập</Button>)
+        let token = localStorage.getItem('USER_LOGIN');
+        if(!token)
+            return (<Button className="login__btn" href="/Login">Đăng nhập</Button>)
         return (
-            <Link to = '/Info'>
+            <Dropdown>
                 <img
                     alt='avt'
                     src={User.avt}
                     className='avt-img'
+                    onClick={() => {
+                        setShow(!show);
+                    }}
                 />
-            </Link>
+                <Dropdown.Menu show = {show} align="end">
+                    <Dropdown.Item href="/Info">Thông tin cá nhân</Dropdown.Item>
+                    <Dropdown.Divider/>
+                    <Dropdown.Item href="/">Đăng xuất</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
         )
     }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './style/Sidebar.css';
+import {User} from '../modules/utils/user'
 // import { MdKeyboardBackspace } from "react-icons/md";
 
 export default function Sidebar({ path }) {
@@ -28,18 +29,28 @@ export default function Sidebar({ path }) {
                 <Link to='NV' className='item_name'><div className={onSelectColor('NV')}>Nhiệm vụ</div></Link>
             </div>
             <div className='sidebar__footer'>
-                {/* <button
-                    className='back__btn sidebar__item color__blue'
-                    onClick={() => {
-                        console.log(path);
-                        let p = path.lastIndexOf('/');
-                        let p2 = path.substr(0, p);
-                        console.log(p2);
-                        setPath(p2);
-                    }}
-                >
-                    <MdKeyboardBackspace />  Trở về
-                </button> */}
+                <img
+                    alt = 'avt'
+                    src= {User.avt}
+                    className = 'avt-img'
+                />
+                <div className='user_name' style={{
+                    'margin-left' : '10px'
+                }}>
+                    <div style={{
+                        'font-weight': 'bold',
+                        'font-family': 'inherit'
+                    }}>
+                        {User.name}
+                    </div>
+                    <div style={{
+                        'font-family': 'inherit',
+                        'font-weight' : '300',
+                        'font-size' : '15px'
+                    }}>
+                        {User.role}
+                    </div>
+                </div>
             </div>
         </div>
     );

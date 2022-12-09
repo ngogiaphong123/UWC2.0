@@ -5,6 +5,9 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 
+import {User} from '../modules/utils/user';
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faTruckFast,
@@ -13,6 +16,22 @@ import './style/Navbar.css';
 import { FiSend } from "react-icons/fi";
 
 export default function NavbarComponent() {
+
+    const Login = () => {
+        // let token = localStorage.getItem('USER_LOGIN');
+        // if(!token)
+        //     return (<Button className="login__btn" href="/Login">Đăng nhập</Button>)
+        return (
+            <Link to = '/Info'>
+                <img
+                    alt='avt'
+                    src={User.avt}
+                    className='avt-img'
+                />
+            </Link>
+        )
+    }
+
     return (
         <Navbar collapseOnSelect expand="xl" bg="light" variant="light" sticky='top' key='sm'>
             <Container className='nv-container'>
@@ -55,7 +74,7 @@ export default function NavbarComponent() {
                 </Navbar.Offcanvas>
                 <div className='btn-gr'>
                     <Button variant="light" href="/chat" className="chat__btn"><FiSend/></Button>
-                    <Button className="login__btn" href="/Login">Đăng nhập</Button>
+                    {Login()}
                 </div>
             </Container>
         </Navbar>

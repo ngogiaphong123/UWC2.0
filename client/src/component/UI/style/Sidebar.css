@@ -1,6 +1,6 @@
 .sidebar__{
     height: 100%;
-    background-color: #fff;
+    background-color: #f7f7f7;
     width: 225px;
     position: fixed;
     top: 80px;
@@ -15,7 +15,7 @@
 .sidebar__item{
     /* #0d6efd */
     text-align: center;
-    background-color: #f7f7f7;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +34,7 @@
 }
 .sidebar__footer{
     display: flex;
-    justify-content: center;
+    /* justify-content: left; */
     align-items: center;
 }
 .back__btn{
@@ -44,4 +44,9 @@
     margin-bottom: auto;
     font-family: inherit;
     
+}
+.avt-img{
+    width: 3.4rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
 }

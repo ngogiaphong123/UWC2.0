@@ -6,6 +6,7 @@ import Home from './component/modules/Home';
 import Dashboard from './component/modules/Dashboard';
 import Login from './component/modules/Login';
 import Register from './component/modules/Register';
+import Inforpage from './component/modules/InforPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/Dashboard/*' element={<Dashboard />}/>
           <Route path = '/Login' element={<Login />}/>
           <Route path = '/Register' element={<Register />}/>
+          <Route path='/Info' element={<Inforpage />}/>
         </Routes>
       </Router>
     </>

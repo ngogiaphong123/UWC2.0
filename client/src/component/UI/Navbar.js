@@ -14,7 +14,7 @@ import {
     faTruckFast,
 } from '@fortawesome/free-solid-svg-icons';
 import './style/Navbar.css';
-import { FiSend } from "react-icons/fi";
+// import { FiSend } from "react-icons/fi";
 
 export default function NavbarComponent() {
     const [show, setShow] = useState(false);
@@ -82,7 +82,7 @@ export default function NavbarComponent() {
                     </Offcanvas.Body>
                 </Navbar.Offcanvas>
                 <div className='btn-gr'>
-                    <Button variant="light" href="/chat" className="chat__btn"><FiSend/></Button>
+                    {/* <Button variant="light" href="/chat" className="chat__btn"><FiSend/></Button> */}
                     {Login()}
                 </div>
             </Container>

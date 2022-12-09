@@ -7,6 +7,7 @@ import Dashboard from './component/modules/Dashboard';
 import Login from './component/modules/Login';
 import Register from './component/modules/Register';
 import Inforpage from './component/modules/InforPage';
+import Chat from './component/modules/Chat';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path = '/Login' element={<Login />}/>
           <Route path = '/Register' element={<Register />}/>
           <Route path='/Info' element={<Inforpage />}/>
+          <Route path = '/Chat' element={<Chat/>}/>
         </Routes>
       </Router>
     </>

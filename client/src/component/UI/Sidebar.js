@@ -22,10 +22,10 @@ export default function Sidebar({ path }) {
     return (
         <div className='sidebar__'>
             <div className='sidebar_ctn'>
-                {/* <Link to='Home' className='item_name'><div className={onSelectColor('Home')}>Trang chủ</div></Link> */}
+                <Link to='Home' className='item_name'><div className={onSelectColor('Home')}>Trang Của tôi</div></Link>
                 <Link to='DSNV' className='item_name'><div className={onSelectColor('DSNV')}>DSNV</div></Link>
                 <Link to='TB' className='item_name'><div className={onSelectColor('TB')}>Thông báo</div></Link>
-                <Link to='Chat' className='item_name'><div className={onSelectColor('Chat')}>Trò chuyện</div></Link>
+                <Link to='/Chat' className='item_name'><div className={onSelectColor('Chat')}>Tin nhắn</div></Link>
                 <Link to='NV' className='item_name'><div className={onSelectColor('NV')}>Nhiệm vụ</div></Link>
             </div>
             <div className='sidebar__footer'>
@@ -35,7 +35,8 @@ export default function Sidebar({ path }) {
                     className = 'avt-img'
                 />
                 <div className='user_name' style={{
-                    'margin-left' : '10px'
+                    'margin-left' : '10px',
+                    'width' : '100%'
                 }}>
                     <div style={{
                         'font-weight': 'bold',

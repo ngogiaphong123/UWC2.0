@@ -6,5 +6,7 @@
     width: 100%;
 }
 .sidebar{
-    width: 225px;
+    /* width: 280px; */
+    width: 40vh;
+    display: flex;
 }

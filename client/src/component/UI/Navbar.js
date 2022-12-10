@@ -18,6 +18,9 @@ import './style/Navbar.css';
 
 export default function NavbarComponent() {
     const [show, setShow] = useState(false);
+    const Logout = () => {
+        localStorage.removeItem("USER_LOGIN");
+    }
     const Login = () => {
         let token = localStorage.getItem('USER_LOGIN');
         if(!token)
@@ -35,7 +38,7 @@ export default function NavbarComponent() {
                 <Dropdown.Menu show = {show} align="end">
                     <Dropdown.Item href="/Info">Thông tin cá nhân</Dropdown.Item>
                     <Dropdown.Divider/>
-                    <Dropdown.Item href="/">Đăng xuất</Dropdown.Item>
+                    <Dropdown.Item onClick={Logout} href="/">Đăng xuất</Dropdown.Item>
                 </Dropdown.Menu>
             </Dropdown>
         )

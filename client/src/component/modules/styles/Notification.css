@@ -1,11 +1,11 @@
 .ochat{
-    width: 95%;
+    width: 98%;
     border-radius: 10px;
     margin: 10px auto;
     background-color: rgb(225, 225, 225);
     padding: 3px 20px;
 }
-button{
+.divbutton>button{
     width: 95%;
     margin: 10px auto;
     height: 50px;
@@ -13,12 +13,18 @@ button{
 .divbutton{
     background-color: aliceblue;
     height: 100%;
-    margin: 10px 0;
+    margin: 10px auto;
+    text-align: center;
+    width: 98%;
+    padding: 10px;
+    border-radius: 20px;
 }
 .framechat{
     background-color: rgb(245, 245, 245);
     height: 100%;
     margin: 10px 0;
+    padding: 20px;
+    border-radius: 20px;
 }
 .container_noti{
     height: 600px;
@@ -26,10 +32,12 @@ button{
 .row_noti{
     height: 100%;
 }
-.backbutton{
-    width: 20%;
-
-}
 .divback{
-    height: fit-content;
+    width: 95%;
+    text-align: center;
+    padding: 10px;
+}
+.backbutton{
+    width: 70%;
+    margin: 10px auto;
 }

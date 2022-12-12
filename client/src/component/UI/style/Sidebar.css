@@ -1,10 +1,10 @@
 .sidebar__{
     height: 100%;
-    background-color: #fff;
+    background-color: #f7f7f7;
     width: 225px;
     position: fixed;
-    top: 60px;
-    display: flex;
+    top: 80px;
+    /* display: flex; */
     justify-content: center;
 }
 .sidebar_ctn{
@@ -15,7 +15,7 @@
 .sidebar__item{
     /* #0d6efd */
     text-align: center;
-    background-color: #f7f7f7;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,4 +31,23 @@
 .color__blue{
     background-color: #0d6efd;
     color: #fff !important;
+}
+.sidebar__footer{
+    display: flex;
+    /* justify-content: left; */
+    align-items: center;
+    width: 100%;
+}
+.back__btn{
+    border: none;
+    /* background-color: #fff; */
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: inherit;
+    
+}
+.avt-img{
+    width: 3.4rem;
+    margin-left: 1rem;
+    border-radius: 2rem;
 }

@@ -1,0 +1,14 @@
+.cm_msg {
+    margin: 0.5rem;
+}
+
+.cm_msg_ctn {
+    /* background-color: #f7f7f7; */
+    font-family: inherit;
+}
+
+.txt__msg {
+    background-color: #f7f7f7;
+    padding: 0.5vh;
+    border-radius: 0.5rem;
+}

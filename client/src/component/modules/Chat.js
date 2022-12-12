@@ -46,7 +46,7 @@ export default function Messenger() {
                     </div>
                 </div>
             </div>
-            <div className='content'>
+            <div className='content-chat'>
                 <div className='content-ctn'>
                     <div className='content__hd'>
                         <UserMessenger />

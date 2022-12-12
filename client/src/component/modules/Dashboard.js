@@ -6,6 +6,7 @@ import ListEmployee from "./ListEmployee";
 import Notification from "./Notification";
 import CollectorCalendar from "./CollectorCalendar";
 import JanitorCalendar from "./JanitorCalendar";
+import Task from "./Task";
 export default function Dashboard(){
     let location = useLocation();
     // console.log(location);
@@ -21,7 +22,7 @@ export default function Dashboard(){
                     <Route path = 'DSNV/collectorCalendar' element = {<CollectorCalendar/>}/>
                     <Route path = 'DSNV/janitorCalendar' element = {<JanitorCalendar/>}/>
                     <Route path = 'TB' element = {<Notification/>}/>
-                    {/* <Route path = 'NV' element = /> */}
+                    <Route path = 'NV' element = {<Task/>}/>
                 </Routes>
             </div>
         </div>

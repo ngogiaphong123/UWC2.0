@@ -3,7 +3,7 @@
     display: flex;
 }
 .element{
-    width: 100%;
+    width: calc(100% - 225px);
 }
 .sidebar{
     width: 225px;

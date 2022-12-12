@@ -2,14 +2,17 @@
     height: 100%;
     background-color: #f7f7f7;
     width: 225px;
-    position: fixed;
-    top: 80px;
+    /* position: fixed; */
+    position: relative;
+    /* top: 80px; */
+    top : 0;
+    left: 0;
     /* display: flex; */
     justify-content: center;
 }
 .sidebar_ctn{
     overflow: auto;
-    height: 80vh;
+    height: 76vh;
     width: 100%;
 }
 .sidebar__item{
@@ -37,6 +40,8 @@
     /* justify-content: left; */
     align-items: center;
     width: 100%;
+    position: absolute;
+    bottom: 30px;
 }
 .back__btn{
     border: none;

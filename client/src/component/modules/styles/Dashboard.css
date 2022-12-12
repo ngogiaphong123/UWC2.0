@@ -3,10 +3,15 @@
     display: flex;
 }
 .element{
-    width: calc(100% - 225px);
+    width: 100%;
+    height: calc(100vh - 83.59px);
+    overflow: auto;
 }
 .sidebar{
     /* width: 280px; */
     width: 40vh;
     display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
 }

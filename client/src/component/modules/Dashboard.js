@@ -8,7 +8,6 @@ import Task from "./Task";
 import Notification from "./Notification";
 import CollectorCalendar from "./CollectorCalendar";
 import JanitorCalendar from "./JanitorCalendar";
-import Task from "./Task";
 export default function Dashboard(){
     let location = useLocation();
     // console.log(location);

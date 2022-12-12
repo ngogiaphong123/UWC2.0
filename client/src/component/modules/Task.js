@@ -484,8 +484,8 @@ function Task() {
 
             </div>
             <footer className="popup__collector-footer">
-              <button className="footer-clear btn" onClick={turnOffJanitor}>Hủy</button>
-              <button className="footer-submit btn" onClick={turnOffJanitor} >Xác nhận</button>
+              <button className="footer-clear BTN" onClick={turnOffJanitor}>Hủy</button>
+              <button className="footer-submit BTN" onClick={turnOffJanitor} >Xác nhận</button>
             </footer>
 
           </div>
@@ -557,8 +557,8 @@ function Task() {
 
             </div>
             <footer className="popup__collector-footer">
-              <button className="footer-clear btn" onClick={turnOffCollector}>Hủy</button>
-              <button className="footer-submit btn" onClick={turnOffCollector} >Xác nhận</button>
+              <button className="footer-clear BTN" onClick={turnOffCollector}>Hủy</button>
+              <button className="footer-submit BTN" onClick={turnOffCollector} >Xác nhận</button>
             </footer>
 
           </div>}

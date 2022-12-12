@@ -208,28 +208,28 @@
 
 #MCP1 {
     position: absolute;
-    top: 50px;
+    top: 63px;
     left: 300px;
     z-index: 1;
 }
 
 #MCP7 {
     position: absolute;
-    top: 50px;
+    top: 63px;
     left: 200px;
     z-index: 1;
 }
 
 #MCP2 {
     position: absolute;
-    top: 60px;
+    top: 73px;
     left: 400px;
     z-index: 1;
 }
 
 #MCP3 {
     position: absolute;
-    top: 150px;
+    top: 163px;
     left: 300px;
     z-index: 1;
 
@@ -237,7 +237,7 @@
 
 #MCP4 {
     position: absolute;
-    top: 250px;
+    top: 263px;
     left: 600px;
     z-index: 1;
 
@@ -245,7 +245,7 @@
 
 #MCP5 {
     position: absolute;
-    top: 400px;
+    top: 413px;
     left: 200px;
     z-index: 1;
 
@@ -253,7 +253,7 @@
 
 #MCP7 {
     position: absolute;
-    top: 150px;
+    top: 163px;
     left: 800px;
     z-index: 1;
 
@@ -261,7 +261,7 @@
 
 #MCP8 {
     position: absolute;
-    top: 390px;
+    top: 403px;
     left: 780px;
     z-index: 1;
 
@@ -269,7 +269,7 @@
 
 #FACTORY {
     position: absolute;
-    top: 10px;
+    top: 26px;
     left: 15px;
     z-index: 1;
 
@@ -277,7 +277,7 @@
 
 #ALO {
     position: absolute;
-    top: 400px;
+    top: 413px;
     left: 400px;
     z-index: 1;
 
@@ -404,7 +404,7 @@
     align-items: center;
 }
 
-.btn {
+.BTN {
     height: 35px;
     margin: 0 10px;
     min-width: 50px;
@@ -425,7 +425,7 @@
     font-weight: 600;
 }
 
-.btn:hover {
+.BTN:hover {
     filter: brightness(90%);
 }
 

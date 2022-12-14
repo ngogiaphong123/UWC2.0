@@ -115,7 +115,7 @@ function JanitorCalendar() {
                             initialEvents={JANITOR_EVENTS} // alternatively, use the `events` setting to fetch from a feed
                             select={handleDateSelect}
                             eventContent={renderEventContent} // custom render function
-                            eventClick={handleEventClick}
+                            eventClick={(e)=>{handleEventClick(navigate,"janitor")}}
                             themeSystem="bootstrap"
                         // no html escape
                         // eventsSet={handleEvents} // called after events are initialized/added/changed/removed

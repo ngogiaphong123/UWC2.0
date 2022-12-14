@@ -10,6 +10,7 @@ import CollectorCalendar from "./CollectorCalendar";
 import JanitorCalendar from "./JanitorCalendar";
 import DetailCalendarCollector from "./DetailCalendarCollector";
 import DetailCalendarJanitor from "./DetailJanitorCollector";
+import Overview from "./Overview";
 export default function Dashboard(){
     let location = useLocation();
     // console.log(location);
@@ -20,7 +21,8 @@ export default function Dashboard(){
             </div>
             <div className="element">
                 <Routes>
-                    <Route path='' element={<ListEmployee />} />
+                    <Route path = '' element={<ListEmployee />} />
+                    <Route path = '/Home' element={<Overview />} />
                     <Route path = 'DSNV' element = {<ListEmployee/>}/>
                     <Route path = 'NV' element = {<Task/>}/>
                     <Route path = 'DSNV/collectorCalendar' element = {<CollectorCalendar/>}/>

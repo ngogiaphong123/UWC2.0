@@ -166,7 +166,7 @@ function Task() {
   // janitor
   const handleContextMenu = useCallback(
     (event) => {
-      //event.preventDefault();
+      event.preventDefault();
       setAnchorPoint({ x: event.pageX, y: event.pageY });
 
       setShow(true);
@@ -176,7 +176,7 @@ function Task() {
   // collector    
   const handleContextMenu1 = useCallback(
     (event) => {
-    //  event.preventDefault();
+     event.preventDefault();
       setAnchorPoint({ x: event.pageX, y: event.pageY });
       setShow1(true);
 

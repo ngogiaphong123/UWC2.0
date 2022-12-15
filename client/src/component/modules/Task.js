@@ -12,43 +12,151 @@ function Task() {
   // change color
   let change1 = { color: '#e84434' };
   let change2 = { color: '#14842f' };
+
   const [flag0, setFlag0] = useState(true); //FACTORY
+  const [active0,setActive0]=useState(true);
   const changeColor0 = () => {
     setFlag0(!flag0)
+    setActive0(!active0);
+    
+   
   }
+  
+ 
   const [flag1, setFlag1] = useState(true);
+  const [active1,setActive1]=useState(true);
   const changeColor1 = () => {
     setFlag1(!flag1)
+    setActive1(!active1);
+    
   }
   const [flag2, setFlag2] = useState(true);
+  const [active2,setActive2]=useState(true);
   const changeColor2 = () => {
     setFlag2(!flag2)
+    setActive2(!active2);
   }
   const [flag3, setFlag3] = useState(true);
+  const [active3,setActive3]=useState(true);
   const changeColor3 = () => {
-    setFlag3(!flag3)
+    setFlag3(!flag3);
+    setActive3(!active3);
   }
   const [flag4, setFlag4] = useState(true);
+  const [active4,setActive4]=useState(true);
   const changeColor4 = () => {
-    setFlag4(!flag4)
+    setFlag4(!flag4);
+    setActive4(!active4);
   }
   const [flag5, setFlag5] = useState(true);
+  const [active5,setActive5]=useState(true);
   const changeColor5 = () => {
-    setFlag5(!flag5)
+    setFlag5(!flag5);
+    setActive5(!active5);
   }
   const [flag6, setFlag6] = useState(true); //FACTORY
+  const [active6,setActive6]=useState(true);
   const changeColor6 = () => {
-    setFlag6(!flag6)
+    setFlag6(!flag6);
+    setActive6(!active6);
   }
   const [flag7, setFlag7] = useState(true); //FACTORY
+  const [active7,setActive7]=useState(true);
   const changeColor7 = () => {
-    setFlag7(!flag7)
+    setFlag7(!flag7);
+    setActive7(!active7);
   }
   const [flag8, setFlag8] = useState(true); //FACTORY
+  const [active8,setActive8]=useState(true);
   const changeColor8 = () => {
-    setFlag8(!flag8)
+    setFlag8(!flag8);
+    setActive8(!active8);
   }
 
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active0==false) setActive0(true);
+
+    },1500);
+  },[active1])
+  
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active1==false) setActive1(true);
+
+    },1500);
+  },[active2])
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active1==false) setActive1(true);
+      if(active2==false) setActive2(true);
+
+    },1500);
+  },[active3])
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active3==false) setActive3(true);
+      if(active2==false) setActive2(true);
+
+    },1500);
+  },[active4])
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active4==false) setActive4(true);
+      if(active2==false) setActive2(true);
+
+    },1500);
+  },[active7])
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active7==false) setActive7(true);
+ 
+
+    },1500);
+  },[active8])
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active0==false) setActive0(true);
+      if(active3==false) setActive3(true);
+ 
+
+    },1500);
+  },[active5])
+  useEffect (()=>
+  {
+    setTimeout(()=>
+    {
+      
+      if(active3==false) setActive3(true);
+      if(active4==false) setActive4(true);
+      if(active8==false) setActive8(true);
+      if(active5==false) setActive5(true);
+      if(active6==false) setActive6(true);
+ 
+
+    },1500);
+  },[active6])
   // context menu 
 
   const [anchorPoint, setAnchorPoint] = useState({ x: 0, y: 0 });
@@ -58,7 +166,7 @@ function Task() {
   // janitor
   const handleContextMenu = useCallback(
     (event) => {
-      event.preventDefault();
+      //event.preventDefault();
       setAnchorPoint({ x: event.pageX, y: event.pageY });
 
       setShow(true);
@@ -68,7 +176,7 @@ function Task() {
   // collector    
   const handleContextMenu1 = useCallback(
     (event) => {
-      event.preventDefault();
+    //  event.preventDefault();
       setAnchorPoint({ x: event.pageX, y: event.pageY });
       setShow1(true);
 
@@ -88,15 +196,6 @@ function Task() {
   function turnOffCollector() {
     setShow1(false);
   }
-  useEffect(() => {
-
-    // document.addEventListener("click", handleClick);
-    // document.addEventListener("contextmenu", handleContextMenu);
-    return () => {
-      //document.removeEventListener("click", handleClick);
-      //document.removeEventListener("contextmenu", handleContextMenu);
-    };
-  })
 
 
 
@@ -296,44 +395,44 @@ function Task() {
           <button className="node8F" onClick={changeRoute8F} onContextMenu={handleContextMenu1}></button>
         </div>
 
-        <button className="MCP" id='FACTORY' style={flag0 ? change1 : change2} onDoubleClick={changeColor0}
+        <button className="MCP" id='FACTORY' style={active0 ? change1 : change2} onDoubleClick={changeColor0}
 
           onContextMenu={handleContextMenu}  >
           <i className="fa-solid fa-industry"></i>
         </button>
 
-        <button className="MCP" id='MCP1' style={flag1 ? change1 : change2} onDoubleClick={changeColor1} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='MCP1' style={active1 ? change1 : change2} onDoubleClick={changeColor1} onContextMenu={handleContextMenu}>
           <i className="MCP-icon fa-solid fa-location-dot"></i>
         </button>
 
-        <button className="MCP" id='MCP2' style={flag2 ? change1 : change2} onDoubleClick={changeColor2} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='MCP2' style={active2 ? change1 : change2} onDoubleClick={changeColor2} onContextMenu={handleContextMenu}>
           <i className="MCP-icon fa-solid fa-location-dot"></i>
         </button>
 
-        <button className="MCP" id='MCP3' style={flag3 ? change1 : change2} onDoubleClick={changeColor3} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='MCP3' style={active3 ? change1 : change2} onDoubleClick={changeColor3} onContextMenu={handleContextMenu}>
           <i className="MCP-icon fa-solid fa-location-dot"></i>
         </button>
 
-        <button className="MCP" id='MCP4' style={flag4 ? change1 : change2} onDoubleClick={changeColor4} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='MCP4' style={active4 ? change1 : change2} onDoubleClick={changeColor4} onContextMenu={handleContextMenu}>
           <i className="MCP-icon fa-solid fa-location-dot"></i>
         </button>
 
-        <button className="MCP" id='MCP5' style={flag5 ? change1 : change2} onDoubleClick={changeColor5} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='MCP5' style={active5 ? change1 : change2} onDoubleClick={changeColor5} onContextMenu={handleContextMenu}>
           <i className="MCP-icon fa-solid fa-location-dot"></i>
         </button>
 
-        <button className="MCP" id='MCP7' style={flag7 ? change1 : change2} onDoubleClick={changeColor7} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='MCP7' style={active7 ? change1 : change2} onDoubleClick={changeColor7} onContextMenu={handleContextMenu}>
           <i className="MCP-icon fa-solid fa-location-dot"></i>
         </button>
 
-        <button className="MCP" id='MCP8' style={flag8 ? change1 : change2} onDoubleClick={changeColor8} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='MCP8' style={active8 ? change1 : change2} onDoubleClick={changeColor8} onContextMenu={handleContextMenu}>
           <i className="MCP-icon fa-solid fa-location-dot"></i>
         </button>
 
-        <button className="MCP" id='ALO' style={flag6 ? change1 : change2} onDoubleClick={changeColor6} onContextMenu={handleContextMenu}>
+        <button className="MCP" id='ALO' style={active6 ? change1 : change2} onDoubleClick={changeColor6} onContextMenu={handleContextMenu}>
           <i class="fa-solid fa-dumpster"></i>
         </button>
-
+       
 
 
 

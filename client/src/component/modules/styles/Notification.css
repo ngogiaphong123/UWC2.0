@@ -3,26 +3,16 @@
     border-radius: 10px;
     margin: 10px auto;
     background-color: rgb(225, 225, 225);
-    padding: 3px 20px;
+    padding: 10px 20px;
 }
-.divbutton>button{
-    width: 95%;
-    margin: 10px auto;
-    height: 50px;
+.ochat>h4{
+    color: blue;
 }
-.divbutton{
-    background-color: aliceblue;
-    height: 100%;
-    margin: 10px auto;
-    text-align: center;
-    width: 98%;
-    padding: 10px;
-    border-radius: 20px;
-}
+
 .framechat{
     background-color: rgb(245, 245, 245);
     height: 100%;
-    margin: 10px 0;
+    margin: 10px 10px;
     padding: 20px;
     border-radius: 20px;
 }
@@ -31,13 +21,4 @@
 }
 .row_noti{
     height: 100%;
-}
-.divback{
-    width: 95%;
-    text-align: center;
-    padding: 10px;
-}
-.backbutton{
-    width: 70%;
-    margin: 10px auto;
 }

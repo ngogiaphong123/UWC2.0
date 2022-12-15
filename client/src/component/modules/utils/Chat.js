@@ -5,7 +5,7 @@ export default function ComingMsg({ chil }) {
         <div className="cm_msg">
             <div className="cm_msg_ctn">
                 <div className="txt__msg">
-                    {chil}
+                    <span className="txt">{chil}</span>
                 </div>
             </div>
         </div>
@@ -13,5 +13,13 @@ export default function ComingMsg({ chil }) {
 }
 
 export function SendingMsg({ chil }) {
-
+    return (
+        <div className="cm_msg">
+            <div className="cm_msg_ctn">
+                <div className="txt__msg_send">
+                    <span className="txt_send">{chil}</span>
+                </div>
+            </div>
+        </div>
+    );
 }

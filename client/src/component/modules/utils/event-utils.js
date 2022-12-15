@@ -1,4 +1,5 @@
 import { formatDate } from '@fullcalendar/react'
+import { useNavigate } from 'react-router-dom'
 
 let eventGuid = 0
 let todayStr = new Date().toISOString().replace(/T.*$/, '') // YYYY-MM-DD of today
@@ -131,8 +132,11 @@ export function renderEventContent(eventInfo) {
         </>
     )
 }
-export function handleEventClick(clickInfo) {
-    if (window.confirm(`Are you sure you want to delete the event '${clickInfo.event.title}'`)) {
-        clickInfo.event.remove()
+export function handleEventClick(navigate,type) {
+    if(type === "collector"){
+        navigate('/Dashboard/DSNV/collectorCalendar/detail')
+    }
+    else {
+        navigate('/Dashboard/DSNV/janitorCalendar/detail')
     }
 }
